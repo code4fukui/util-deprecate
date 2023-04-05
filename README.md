@@ -7,6 +7,14 @@ In Node.js, this module simply re-exports the `util.deprecate()` function.
 In the web browser (i.e. via browserify), a browser-specific implementation
 of the `util.deprecate()` function is used.
 
+## Usage
+
+```js
+import { deprecate } from "https://code4fukui.github.io/util-deprecate/deprecate.js";
+
+const foo = () => {};
+const foo2 = deprecate(foo, 'foo() is deprecated, use bar() instead');
+```
 
 ## API
 
